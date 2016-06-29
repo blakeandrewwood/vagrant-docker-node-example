@@ -11,7 +11,7 @@ const app = express();
 
 app.get('/', function (req, res) {
 
-    console.log('/');
+    console.log('hello world ------------ !!');
 
 	var Pool = require('pg').Pool;
 	var pool = new Pool({

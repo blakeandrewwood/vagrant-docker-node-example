@@ -20,17 +20,3 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh
 
 ENV NODE_PATH $NVM_DIR/$NODE_VERSION/lib/node_modules
 ENV PATH      $NVM_DIR/$NODE_VERSION/bin:$PATH
-
-# Create app directory
-#RUN mkdir -p /usr/src/app
-#WORKDIR /usr/src/app
-
-# Install app dependencies
-#COPY package.json /usr/src/app/
-#RUN npm install
-
-# Bundle app source
-#COPY . /usr/src/app
-
-EXPOSE 8080
-#CMD [ "npm", "start" ]

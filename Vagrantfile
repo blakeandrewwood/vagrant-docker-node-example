@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
 
   # Network
   config.vm.network "forwarded_port", guest: 49160, host: 8080
-  config.vm.network "private_network", ip: "192.168.33.10"
+  #config.vm.network "private_network", ip: "192.168.33.10"
 
   # Provision
   config.vm.provision "docker"
